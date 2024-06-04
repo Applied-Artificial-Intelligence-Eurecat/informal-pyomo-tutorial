@@ -1,0 +1,24 @@
+# usage
+# conda env create -f environment.yml
+# conda env update -f environment.yml --prune
+#
+name: pyomo-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - ipykernel
+  - numpy
+  - pandas
+  - xarray
+  - jupyterlab
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pip:
+      - SciencePlots
+      - plotly-express
+      - dataframe-image
+      - 'pyomo[optional]'
+      - highspy
